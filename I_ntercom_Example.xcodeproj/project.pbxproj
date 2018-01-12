@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		464FF90CDDE4DAAD4F4F780D /* Pods_I_ntercom_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AB369F4046986B566C8D3F /* Pods_I_ntercom_Example.framework */; };
 		ACFFD53B2008A89C00E28EA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFD53A2008A89C00E28EA0 /* AppDelegate.swift */; };
 		ACFFD53D2008A89C00E28EA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFD53C2008A89C00E28EA0 /* ViewController.swift */; };
 		ACFFD5402008A89C00E28EA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFFD53E2008A89C00E28EA0 /* Main.storyboard */; };
 		ACFFD5422008A89C00E28EA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFFD5412008A89C00E28EA0 /* Assets.xcassets */; };
 		ACFFD5452008A89C00E28EA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFFD5432008A89C00E28EA0 /* LaunchScreen.storyboard */; };
+		ACFFD54D2008C4D600E28EA0 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFD54C2008C4D600E28EA0 /* QuoteViewController.swift */; };
+		ACFFD54F2008C4E800E28EA0 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFD54E2008C4E800E28EA0 /* EditViewController.swift */; };
+		ACFFD5512008C56E00E28EA0 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFD5502008C56E00E28EA0 /* Quote.swift */; };
+		ACFFD5532008C5D600E28EA0 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFD5522008C5D600E28EA0 /* ModelController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49889116F38F18F52F54EDFE /* Pods-I_ntercom_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I_ntercom_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-I_ntercom_Example/Pods-I_ntercom_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ACFFD5372008A89C00E28EA0 /* I_ntercom_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = I_ntercom_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFFD53A2008A89C00E28EA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACFFD53C2008A89C00E28EA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,12 @@
 		ACFFD5412008A89C00E28EA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACFFD5442008A89C00E28EA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACFFD5462008A89C00E28EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACFFD54C2008C4D600E28EA0 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		ACFFD54E2008C4E800E28EA0 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		ACFFD5502008C56E00E28EA0 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		ACFFD5522008C5D600E28EA0 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		CEBC77F2FC181428F52BFF9F /* Pods-I_ntercom_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I_ntercom_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-I_ntercom_Example/Pods-I_ntercom_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F0AB369F4046986B566C8D3F /* Pods_I_ntercom_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_I_ntercom_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464FF90CDDE4DAAD4F4F780D /* Pods_I_ntercom_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08374AB4E15591451C68EC3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0AB369F4046986B566C8D3F /* Pods_I_ntercom_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ACFFD52E2008A89C00E28EA0 = {
 			isa = PBXGroup;
 			children = (
 				ACFFD5392008A89C00E28EA0 /* I_ntercom_Example */,
 				ACFFD5382008A89C00E28EA0 /* Products */,
+				D6C43CFE20CC2A6963BA37A6 /* Pods */,
+				08374AB4E15591451C68EC3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +80,24 @@
 				ACFFD53A2008A89C00E28EA0 /* AppDelegate.swift */,
 				ACFFD53C2008A89C00E28EA0 /* ViewController.swift */,
 				ACFFD53E2008A89C00E28EA0 /* Main.storyboard */,
+				ACFFD54C2008C4D600E28EA0 /* QuoteViewController.swift */,
+				ACFFD54E2008C4E800E28EA0 /* EditViewController.swift */,
+				ACFFD5502008C56E00E28EA0 /* Quote.swift */,
+				ACFFD5522008C5D600E28EA0 /* ModelController.swift */,
 				ACFFD5412008A89C00E28EA0 /* Assets.xcassets */,
 				ACFFD5432008A89C00E28EA0 /* LaunchScreen.storyboard */,
 				ACFFD5462008A89C00E28EA0 /* Info.plist */,
 			);
 			path = I_ntercom_Example;
+			sourceTree = "<group>";
+		};
+		D6C43CFE20CC2A6963BA37A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEBC77F2FC181428F52BFF9F /* Pods-I_ntercom_Example.debug.xcconfig */,
+				49889116F38F18F52F54EDFE /* Pods-I_ntercom_Example.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACFFD5492008A89C00E28EA0 /* Build configuration list for PBXNativeTarget "I_ntercom_Example" */;
 			buildPhases = (
+				5FBEFB4B354AA66035367E1C /* [CP] Check Pods Manifest.lock */,
 				ACFFD5332008A89C00E28EA0 /* Sources */,
 				ACFFD5342008A89C00E28EA0 /* Frameworks */,
 				ACFFD5352008A89C00E28EA0 /* Resources */,
+				1D18AB39F03FFB23D650DE1B /* [CP] Embed Pods Frameworks */,
+				84DE1633EEE9341C4091640A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +170,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D18AB39F03FFB23D650DE1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-I_ntercom_Example/Pods-I_ntercom_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FBEFB4B354AA66035367E1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-I_ntercom_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84DE1633EEE9341C4091640A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-I_ntercom_Example/Pods-I_ntercom_Example-resources.sh",
+				"${PODS_ROOT}/Intercom/Intercom/Intercom.framework/Versions/A/Resources/Intercom.bundle",
+				"${PODS_ROOT}/Intercom/Intercom/Intercom.framework/Versions/A/Resources/IntercomTranslations.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-I_ntercom_Example/Pods-I_ntercom_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACFFD5332008A89C00E28EA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFFD54F2008C4E800E28EA0 /* EditViewController.swift in Sources */,
+				ACFFD54D2008C4D600E28EA0 /* QuoteViewController.swift in Sources */,
 				ACFFD53D2008A89C00E28EA0 /* ViewController.swift in Sources */,
+				ACFFD5532008C5D600E28EA0 /* ModelController.swift in Sources */,
+				ACFFD5512008C56E00E28EA0 /* Quote.swift in Sources */,
 				ACFFD53B2008A89C00E28EA0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +370,7 @@
 		};
 		ACFFD54A2008A89C00E28EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEBC77F2FC181428F52BFF9F /* Pods-I_ntercom_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +385,7 @@
 		};
 		ACFFD54B2008A89C00E28EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49889116F38F18F52F54EDFE /* Pods-I_ntercom_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,24 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Quote View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Quote View Controller" id="BYZ-38-t0r" customClass="QuoteViewController" customModule="I_ntercom_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kcj-F9-Zqt">
+                                <rect key="frame" x="16" y="36" width="343" height="344"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="344" id="juX-qf-8HD"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hc-O9-th6">
+                                <rect key="frame" x="100" y="407" width="255" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eoR-9t-XQZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTL-eL-2E3">
+                                <rect key="frame" x="107" y="492" width="161" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oDj-vR-Z2s"/>
+                                </constraints>
+                                <state key="normal" title="Редактировать цитату">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SAY-Nn-fTT" kind="presentation" id="Ne3-vM-q8Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lTL-eL-2E3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="67k-Mx-rAe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9hc-O9-th6" secondAttribute="trailing" constant="20" id="B52-kj-9Od"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kcj-F9-Zqt" secondAttribute="trailing" constant="16" id="Deb-nb-qAH"/>
+                            <constraint firstItem="Kcj-F9-Zqt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="H5D-SD-d5q"/>
+                            <constraint firstItem="9hc-O9-th6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Lzu-sA-e0o"/>
+                            <constraint firstItem="9hc-O9-th6" firstAttribute="top" secondItem="Kcj-F9-Zqt" secondAttribute="bottom" constant="27" id="aur-li-K6j"/>
+                            <constraint firstItem="9hc-O9-th6" firstAttribute="top" secondItem="Kcj-F9-Zqt" secondAttribute="bottom" constant="27" id="m9h-UV-KNe"/>
+                            <constraint firstItem="lTL-eL-2E3" firstAttribute="top" secondItem="9hc-O9-th6" secondAttribute="bottom" constant="55" id="umF-Cn-68A"/>
+                            <constraint firstItem="Kcj-F9-Zqt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="wd6-CA-I94"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="quoteAuthorLabel" destination="9hc-O9-th6" id="AVL-xm-W0c"/>
+                        <outlet property="quoteTextView" destination="Kcj-F9-Zqt" id="LcC-Tz-3bl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="4nc-uf-TKD">
+            <objects>
+                <viewController title="Edit View Controller" id="SAY-Nn-fTT" customClass="EditViewController" customModule="I_ntercom_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hcr-og-uUP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст цитаты:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jix-9e-jvX">
+                                <rect key="frame" x="30" y="55" width="315" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="z4n-Vi-TeU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rsa-bZ-7UK">
+                                <rect key="frame" x="15" y="100" width="345" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="irg-Ec-rjV"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Автор:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuy-AH-odV">
+                                <rect key="frame" x="30" y="227" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z2A-Zd-XYh">
+                                <rect key="frame" x="15" y="258" width="345" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nX3-xH-rCH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5k2-my-DrR">
+                                <rect key="frame" x="30" y="318" width="315" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9ha-wp-Q66"/>
+                                </constraints>
+                                <state key="normal" title=" Сохранить">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButton:" destination="SAY-Nn-fTT" eventType="touchUpInside" id="Puo-y8-06E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YtL-0A-NEl" firstAttribute="trailing" secondItem="jix-9e-jvX" secondAttribute="trailing" constant="30" id="3Cf-We-EEW"/>
+                            <constraint firstItem="jix-9e-jvX" firstAttribute="top" secondItem="YtL-0A-NEl" secondAttribute="top" constant="35" id="4Xa-Ph-xgE"/>
+                            <constraint firstItem="zuy-AH-odV" firstAttribute="leading" secondItem="jix-9e-jvX" secondAttribute="leading" id="8NC-Cg-UV3"/>
+                            <constraint firstItem="YtL-0A-NEl" firstAttribute="trailing" secondItem="5k2-my-DrR" secondAttribute="trailing" constant="30" id="Cif-rT-CjU"/>
+                            <constraint firstItem="5k2-my-DrR" firstAttribute="leading" secondItem="YtL-0A-NEl" secondAttribute="leading" constant="30" id="JB6-cQ-Gnq"/>
+                            <constraint firstItem="YtL-0A-NEl" firstAttribute="trailing" secondItem="z2A-Zd-XYh" secondAttribute="trailing" constant="15" id="M5U-hE-V4N"/>
+                            <constraint firstItem="Rsa-bZ-7UK" firstAttribute="leading" secondItem="YtL-0A-NEl" secondAttribute="leading" constant="15" id="N7v-un-R17"/>
+                            <constraint firstItem="Rsa-bZ-7UK" firstAttribute="top" secondItem="jix-9e-jvX" secondAttribute="bottom" constant="15" id="NmO-Xw-ov0"/>
+                            <constraint firstItem="5k2-my-DrR" firstAttribute="top" secondItem="z2A-Zd-XYh" secondAttribute="bottom" constant="30" id="WrE-z6-fl7"/>
+                            <constraint firstItem="z2A-Zd-XYh" firstAttribute="leading" secondItem="YtL-0A-NEl" secondAttribute="leading" constant="15" id="bUF-bt-AUr"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zuy-AH-odV" secondAttribute="trailing" constant="20" symbolic="YES" id="d5z-pa-pRC"/>
+                            <constraint firstItem="z2A-Zd-XYh" firstAttribute="top" secondItem="Rsa-bZ-7UK" secondAttribute="bottom" constant="30" id="knW-3B-lfm"/>
+                            <constraint firstItem="YtL-0A-NEl" firstAttribute="trailing" secondItem="Rsa-bZ-7UK" secondAttribute="trailing" constant="15" id="nQS-qa-4TA"/>
+                            <constraint firstItem="jix-9e-jvX" firstAttribute="leading" secondItem="YtL-0A-NEl" secondAttribute="leading" constant="30" id="wCW-qv-uX1"/>
+                            <constraint firstItem="z2A-Zd-XYh" firstAttribute="top" secondItem="zuy-AH-odV" secondAttribute="bottom" constant="10" id="xlF-bU-AZL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YtL-0A-NEl"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="z2A-Zd-XYh" id="CKQ-fE-QkR"/>
+                        <outlet property="textView" destination="Rsa-bZ-7UK" id="7lL-64-xtX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Prw-fT-BQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="134"/>
         </scene>
     </scenes>
 </document>
